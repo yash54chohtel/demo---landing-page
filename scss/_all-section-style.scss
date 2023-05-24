@@ -1,0 +1,472 @@
+/* HEADER SECTION START */
+
+// header
+.header {
+    z-index: 1000;
+    padding: 10px 0;
+    transition: var(--transition-02S);
+
+    &.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        box-shadow: var(--box-shadow-1);
+        background-color: var(--bg-white);
+    }
+
+    // navigation
+    .navigation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    // logo
+    .navigation .logo {
+
+        img {
+            width: 180px;
+        }
+
+    }
+
+    // nav lists
+    .navigation .nav-lists {
+        display: flex;
+        gap: 30px;
+
+        a {
+            color: var(--primary-font-color);
+            font-size: 1.2rem;
+            font-weight: 600;
+            letter-spacing: 0.2px;
+            text-transform: capitalize;
+            cursor: pointer;
+        }
+
+    }
+
+    // navigation open button
+    .navigation .nav_open {
+        display: none;
+    }
+
+}
+
+/* HEADER SECTION END */
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* HOME SECTION START */
+
+.home {
+    position: relative;
+    background-image: url("/image/vector edit-Recovered 1 (1).png");
+    background-repeat: no-repeat;
+    background-position: -15px -100px;
+    background-size: cover;
+    height: 720px;
+
+    // circle in home
+    .home-ellipse-1 {
+        background-color: rgba(110, 143, 0, 0.02);
+        left: -248px;
+        top: -147px;
+    }
+
+    .home-ellipse-2 {
+        background: rgba(0, 70, 143, 0.02);
+        left: 485px;
+        top: -226px;
+    }
+
+    .home-ellipse-3 {
+        background: rgba(110, 143, 0, 0.02);
+        left: 255px;
+        top: 200px;
+    }
+
+    // login form
+    .login-form {
+        width: 265px;
+        height: auto;
+        position: absolute;
+        left: 105px;
+        top: 50%;
+        transform: translateY(-50%);
+
+        // image box
+        .img-box {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 50px;
+            }
+
+        }
+
+        // rule
+        .rule {
+            height: 25px;
+            width: 30px;
+            position: relative;
+            font-weight: 700;
+            font-size: 14px;
+            color: var(--light-gray);
+            background-color: #fcfdfa;
+            margin: 16px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &::before {
+                content: "";
+                position: absolute;
+                width: 200px;
+                height: 2px;
+                background-color: var(--light-gray);
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: -1;
+            }
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        // input box
+        .input-box {
+            border: 2px solid rgba(110, 143, 0, 0.605);
+            border-radius: 13px;
+            display: flex;
+            align-items: center;
+            padding: 10px 12px;
+            width: 100%;
+
+            input {
+                border: none;
+                outline: none;
+                background: transparent;
+                font-family: inherit;
+                padding-right: 10px;
+                width: 100%;
+            }
+
+            img {
+                width: 15px;
+            }
+
+        }
+
+        // buttton
+        .button {
+            border: none;
+            outline: none;
+            background: rgba(0, 70, 143, 1);
+            padding: 10px;
+            font-family: inherit;
+            align-self: center;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            border-radius: 12px;
+            color: var(--bg-white);
+        }
+
+    }
+
+}
+
+/* HOME SECTION END */
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* HOW IT WORKS SECTION STARTS */
+
+.works {
+    position: relative;
+    padding: 70px 0;
+
+    // work section circle
+    .work-ellipse-1 {
+        left: -248px;
+        top: -184px;
+        background-color: rgba(110, 143, 0, 0.02);
+    }
+
+    .work-ellipse-2 {
+        left: 699px;
+        top: -174px;
+        background: rgba(0, 70, 143, 0.02);
+    }
+
+    .work-ellipse-3 {
+        left: 240px;
+        top: 240px;
+        background: rgba(110, 143, 0, 0.02);
+    }
+
+    // seciton heading
+    .section-heading {
+        margin-bottom: 80px;
+    }
+
+    // main contetn section
+
+    // card container
+    .card-container {
+
+        .cards {
+            padding: 40px 30px;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: var(--box-shadow-1);
+
+            // image box
+            .img-box {
+                position: absolute;
+                top: -40px;
+            }
+
+            h3 {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 24px;
+                color: #FFFFFF;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 21px;
+                color: #FFFFFF;
+            }
+
+        }
+
+
+        .card-1 {
+            background: rgba(110, 143, 0, 0.39);
+            margin-bottom: 60px;
+        }
+
+        .card-2 {
+            background: rgba(0, 70, 143, 0.39);
+            margin-bottom: 20px;
+        }
+
+        .card-3 {
+            background: rgba(32, 144, 219, 0.39);
+
+            // image box
+            .img-box {
+                position: absolute;
+                top: -30px;
+            }
+
+        }
+
+    }
+
+
+}
+
+/* HOW IT WORKS SECTION ENDS */
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* EXPLORE SECTION START */
+
+.explore {
+    position: relative;
+    padding: 70px 0;
+
+    // work section circle
+    .explore-ellipse-1 {
+        left: -248px;
+        top: -184px;
+        background-color: rgba(110, 143, 0, 0.02);
+    }
+
+    .explore-ellipse-2 {
+        left: 699px;
+        top: -174px;
+        background: rgba(0, 70, 143, 0.02);
+    }
+
+    .explore-ellipse-3 {
+        left: 240px;
+        top: 240px;
+        background: rgba(110, 143, 0, 0.02);
+    }
+
+    // SECTION HEADING
+    .section-heading {
+        margin-bottom: 40px;
+    }
+
+    // para
+    .para {
+        text-align: center;
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: 0.3px;
+        color: #000000;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    // down-arrow
+    .down-arrow {
+        background: rgba(196, 196, 196, 1);
+        width: 40px;
+        height: 40px;
+        position: relative;
+        border-radius: 50%;
+        margin: 0 auto;
+
+        i {
+            color: rgba(110, 143, 0, 1);
+            font-size: 1.5rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+
+    }
+
+}
+
+/* EXPLORE SECTION ENDS */
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* FOOTER SECTION START */
+
+.footer {
+    padding: 30px;
+    border-top: 2px solid rgba(229, 229, 229, 1);
+    padding-bottom: 0;
+
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1.25fr;
+
+        // info
+        .info {
+
+            .img-box {
+                width: 160px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-weight: 600;
+                font-size: 14px;
+                letter-spacing: 0.2px;
+                color: #00468F;
+            }
+
+        }
+
+        // links
+        .links {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+            li {
+                font-weight: 700;
+                font-size: 13px;
+                letter-spacing: 0.4px;
+                margin-bottom: 10px;
+
+                a{
+                    color: #00468F;
+                }
+
+            }
+
+        }
+
+        // social box
+        .social{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            p{
+                align-self: flex-start;
+                color: #00468F;
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 600;
+                color: #00468F;
+                margin-bottom: 15px;
+            }
+
+            .input-btn{
+                width: 100%;
+                display: flex;
+                border: 2px solid rgba(110, 143, 0, 1);
+                margin-bottom: 20px;
+
+
+                input{
+                    border: none;
+                    outline: none;
+                    width: 100%;
+                    padding: 0 10px;
+                }
+
+                .button{
+                    outline: none;
+                    border: none;
+                    background: rgba(110, 143, 0, 1);
+                    padding: 10px;
+                    color: #FFFFFF;
+                }
+
+                
+            }
+
+
+            .social-icon-box{
+
+                i{
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 30px;
+                    width: 30px;
+                    background: rgba(110, 143, 0, 1);
+                    color: white;
+                    border-radius: 50%;
+                    margin-left: 10px;
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+/* FOOTER SECTION END */

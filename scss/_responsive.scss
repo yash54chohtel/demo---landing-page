@@ -1,0 +1,158 @@
+@media screen and (max-width: 992px) {
+
+    // HEADER
+
+    .header .navigation .nav-lists {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        position: fixed;
+        background: var(--bg-white);
+        right: -105%;
+        top: 15%;
+        width: 250px;
+        box-shadow: var(--box-shadow-1);
+        transition: var(--transition-02S);
+        z-index: 1000;
+
+        &.active {
+            right: 5%;
+        }
+
+        .nav-link {
+            padding: 15px 25px;
+            cursor: pointer;
+            transform: var(--transition-02S);
+
+            &:hover {
+                background-color: var(--bg-white-shade);
+            }
+
+        }
+
+    }
+
+    .header .navigation .nav_open {
+        display: block;
+        padding: 10px;
+        font-size: 1.5rem;
+        color: var(--primary-font-color);
+    }
+
+    // HOME SECTION
+
+    .home {
+        background-image: none;
+    }
+
+    .home .login-form {
+        width: 265px;
+        height: auto;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+    }
+
+    // FOOTER
+    .footer {
+
+        padding-bottom: 30px;
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .info {
+                margin-bottom: 30px;
+            }
+
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    // circle
+    .ellipse {
+        width: 650px;
+        height: 650px;
+    }
+
+    // HOME
+    .home {
+
+        .home-ellipse-1 {
+            left: -130px;
+            top: -132px;
+        }
+
+        .home-ellipse-2 {
+            left: 350px;
+            top: -216px;
+        }
+
+        .home-ellipse-3 {
+            background: rgba(110, 143, 0, 0.02);
+            left: 190px;
+            top: 281px;
+        }
+
+    }
+
+    // FOOTER
+    .footer {
+
+        padding-bottom: 30px;
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr;
+
+
+            .links{
+                margin-bottom: 30px;
+                align-items: self-start;
+            }
+
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    // circle
+    .ellipse {
+        width: 550px;
+        height: 550px;
+    }
+
+    // HOME
+    .home {
+        height: 550px;
+
+        .login-form {
+            top: 50%;
+        }
+
+    }
+
+    // HEADER
+    .header {
+        padding: 10px 10px;
+    }
+
+    .header .navigation .logo img {
+        width: 150px;
+    }
+
+    // EXPLORE
+    .explore .para {
+        width: 95%;
+    }
+
+}
